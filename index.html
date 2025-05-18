@@ -1,120 +1,111 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <title>موقع YoungWork</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoungWork SARL - Accueil</title>
     <style>
         body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            direction: rtl;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #004d99;
-            color: white;
-            padding: 20px 0;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            font-size: 2em;
+            position: relative;
+            animation: logoBounce 2s infinite;
+        }
+        @keyframes logoBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0073e6;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
             font-weight: bold;
         }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
+        nav a:hover {
+            text-decoration: underline;
         }
-        section {
-            margin-bottom: 30px;
-            background-color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004d99;
-            margin-top: 0;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service {
-            flex: 1 1 250px;
-            background-color: #e6f0ff;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        .language-selector {
             text-align: center;
+            margin: 10px;
         }
-        .service img {
-            max-width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 10px;
+        button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #004d99;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 15px 0;
-            font-size: 0.9em;
-        }
-        a {
-            color: #004d99;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>YoungWork</header>
-    <main>
-        <section>
-            <h2>من نحن</h2>
-            <p>نحن شركة متخصصة في خدمات البناء، التشجير، الصيانة، والتنظيف، نقدم خدمات عالية الجودة بأسعار تنافسية.</p>
-        </section>
-        <section>
-            <h2>خدماتنا</h2>
-            <div class="services">
-                <div class="service">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="البناء">
-                    <h3>البناء</h3>
-                    <p>تنفيذ مشاريع البناء بمستوى عالي من الدقة والاحترافية.</p>
-                </div>
-                <div class="service">
-                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="التشجير">
-                    <h3>التشجير</h3>
-                    <p>تنسيق وتجميل المساحات الخضراء بأفضل النباتات والأشجار.</p>
-                </div>
-                <div class="service">
-                    <img src="https://images.unsplash.com/photo-1581093588401-39b8a9b5c324?auto=format&fit=crop&w=400&q=80" alt="الصيانة">
-                    <h3>الصيانة</h3>
-                    <p>خدمات صيانة شاملة للمباني والمرافق بكفاءة عالية.</p>
-                </div>
-                <div class="service">
-                    <img src="https://images.unsplash.com/photo-1560184897-9dcdecebb3e6?auto=format&fit=crop&w=400&q=80" alt="التنظيف">
-                    <h3>التنظيف</h3>
-                    <p>تنظيف محترف ونظيف لجميع أنواع المباني.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>تواصل معنا</h2>
-            <p>للحصول على خدماتنا، يرجى الاتصال على الرقم: <a href="tel:+212600000000">+212 600 000 000</a> أو عبر البريد الإلكتروني: <a href="mailto:info@youngwork.ma">info@youngwork.ma</a></p>
-        </section>
-    </main>
+    <header>
+        <h1>YoungWork SARL</h1>
+        <p>Construisons Demain, Naturellement.</p>
+    </header>
+    <div class="language-selector">
+        <button onclick="changeLanguage('fr')">Français</button>
+        <button onclick="changeLanguage('ar')">العربية</button>
+        <button onclick="changeLanguage('ber')">ⴰⵎⴰⵣⵉⵖ</button>
+    </div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Nos Services</a>
+        <a href="#">Nos Réalisations</a>
+        <a href="#">Contactez-nous</a>
+    </nav>
+    <section class="section">
+        <h2>À propos</h2>
+        <p>YoungWork SARL est une entreprise dynamique et innovante opérant dans plusieurs secteurs stratégiques tels que la construction, le génie civil, l'aménagement paysager, le nettoyage, la sécurité, la location de matériel et la maintenance industrielle. Grâce à notre expertise et notre engagement envers la qualité, nous proposons des solutions sur mesure qui répondent aux besoins les plus complexes de nos clients.</p>
+    </section>
+    <section class="section">
+        <h2>Nos Réalisations</h2>
+        <p>ℹ️ La société est encore jeune et en pleine expansion.</p>
+    </section>
+    <section class="section">
+        <h2>Contactez-nous</h2>
+        <p>MEARADI Fakhreddine - Téléphone: +212 666 257 924</p>
+        <p>RAQI Mouhcine - Téléphone: +212 603 052 072</p>
+        <p>MAACH Mouhcine - Téléphone: +212 624 438 135</p>
+        <p>GRAIDI Mohammed - Téléphone: +212 641 681 312</p>
+    </section>
     <footer>
-        © 2025 YoungWork - جميع الحقوق محفوظة
+        © 2025 YoungWork SARL - Tous droits réservés
     </footer>
 </body>
 </html>
